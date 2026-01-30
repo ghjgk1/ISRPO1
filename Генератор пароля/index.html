@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="password-display" id="gen_pass">Пароль</div>
+        
+        <div class="slider-container">
+            <div class="slider-label">
+                <span>Длина пароля</span>
+                <span id="length-value">4</span>
+            </div>
+            <input type="range" min="4" max="16" value="4" class="slider" id="range">
+        </div>
+
+        <div class="toggle-group">
+            <div class="toggle-item">
+                <span>Использовать верхний регистр</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="upper">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+            
+            <div class="toggle-item">
+                <span>Использовать нижний регистр</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="lower">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+            
+            <div class="toggle-item">
+                <span>Использовать цифры</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="number">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+            
+            <div class="toggle-item">
+                <span>Использовать специальные символы</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="special">
+                    <span class="slider-toggle"></span>
+                </label>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="gen_btn">Сгенерировать</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

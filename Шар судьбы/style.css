@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+#answer-btn {
+    background-color: #00008B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+#answer-btn:hover {
+    background-color: #000066;
+}
+
+.magic-ball {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #00008B;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #000066;
+    position: absolute;
+    bottom: 50px;
+    transition: all 0.3s;
+}
+
+.answer-display {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+}
+
+.thinking {
+    transform: scale(1.1);
+}
+
+.thinking .triangle {
+    transform: scale(1.1);
+}
