@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кибертека на Профсоюзной</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page">
+  <nav class="side-nav" aria-label="Навигация">
+    <a class="is-active" href="#home">Главная</a>
+    <a href="#zones">Зоны</a>
+    <a href="prices-prof.html">Цены</a>
+    <a href="#photos">Фото</a>
+    <a href="#promo">Акции</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <a class="close-to-index" href="index.html" aria-label="К выбору филиала">
+    <span>×</span>
+  </a>
+
+  <header class="hero hero--prof" id="home">
+    <div class="container">
+      <div class="hero__panel">
+        <div class="hero__brand">
+          <img src="img/logo.png" alt="" aria-hidden="true" />
+          <div>
+            <h1>КИБЕРТЕКА</h1>
+            <p>НА ПРОФСОЮЗНОЙ</p>
+          </div>
+        </div>
+
+        <ul class="hero__meta">
+          <li>Профсоюзная улица 22/10к1</li>
+          <li>Работаем круглосуточно!</li>
+          <li>8&nbsp;977&nbsp;320&nbsp;88&nbsp;88</li>
+        </ul>
+
+        <a class="btn btn--primary" href="#booking">Забронировать</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--band" id="zones">
+      <div class="container">
+        <h2 class="section__title">РАЗНЫЕ ЗОНЫ С РАЗНЫМИ УСЛОВИЯМИ</h2>
+
+        <div class="zones__frame">
+          <div class="zones__grid">
+            <article class="zone-card zone-card--standart">
+              <p class="zone-card__overline">Игровой ПК и периферия</p>
+              <h3 class="zone-card__name">СТАНДАРТ</h3>
+              <div class="zone-card__img">
+                <img src="img/standart_prof.png" alt="Зона Стандарт" />
+              </div>
+              <p class="zone-card__desc">Общая зона</p>
+              <a class="zone-card__link" href="prices-prof.html#standart">Подробнее <span>→</span></a>
+            </article>
+
+            <article class="zone-card zone-card--plus">
+              <p class="zone-card__overline">Монитор больше + ПК мощнее</p>
+              <h3 class="zone-card__name">СТАНДАРТ+</h3>
+              <div class="zone-card__img">
+                <img src="img/standart_plus_prof.png" alt="Зона Стандарт+" />
+              </div>
+              <p class="zone-card__desc">Лучшие места</p>
+              <a class="zone-card__link" href="prices-prof.html#plus">Подробнее <span>→</span></a>
+            </article>
+
+            <article class="zone-card zone-card--ps">
+              <p class="zone-card__overline">Подписка PS+ и 2 геймпада</p>
+              <h3 class="zone-card__name">ПРИСТАВКА</h3>
+              <div class="zone-card__img">
+                <img src="img/ps_prof.png" alt="Зона Приставка" />
+              </div>
+              <p class="zone-card__desc">Диван + PS5</p>
+              <a class="zone-card__link" href="prices-prof.html#ps5">Подробнее <span>→</span></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos" id="photos">
+      <div class="container">
+        <div class="carousel" aria-label="Фотографии клуба">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <div class="carousel__slide"><img src="img/photo_one.png" alt="Интерьер клуба" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="booking-card">
+          <h2 class="booking-card__title">Забронируй место</h2>
+
+          <div class="booking-layout">
+            <form class="booking-form" action="#" method="get">
+              <div class="booking-form__row">
+                <div class="field">
+                  <label for="p-name">Имя</label>
+                  <input class="input" id="p-name" type="text" />
+                </div>
+                <div class="field">
+                  <label for="p-date">дд.мм.гггг</label>
+                  <input class="input" id="p-date" type="text" />
+                </div>
+                <div class="field">
+                  <label for="p-time">время</label>
+                  <input class="input" id="p-time" type="text" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="p-guests">Количество гостей</label>
+                <input class="input" id="p-guests" type="text" placeholder="0" />
+              </div>
+
+              <div class="field">
+                <label for="p-phone">Номер телефона</label>
+                <input class="input" id="p-phone" type="tel" />
+              </div>
+
+              <div class="field">
+                <label for="p-note">Ваши пожелания</label>
+                <textarea class="textarea" id="p-note" rows="4"></textarea>
+              </div>
+
+              <div class="booking-form__actions">
+                <button class="btn btn--primary" type="button">Забронировать</button>
+              </div>
+            </form>
+
+            <div class="booking-art" aria-hidden="true">
+              <img class="vest" src="img/bulletproof.png" alt="" />
+              <img class="helmet" src="img/helmet.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="promo">
+      <div class="container">
+        <h2 class="section__title">АКЦИИ И СКИДКИ НА ЛЮБОЙ ВКУС</h2>
+
+        <div class="promos__grid">
+          <article class="promo promo--ciber" style="--bg: url('img/ciber_back.png')">
+            <div>
+              <div class="promo__title">ПРОМОКОД CIBER</div>
+              <div class="promo__cta">Подробнее <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--monday" style="--bg: url('img/monday_back.jfif')">
+            <div>
+              <div class="promo__title">СКИДКИ ПН–СРЕДА</div>
+              <div class="promo__cta">Забронировать <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--drink" style="--bg: url('img/drink_back.jfif')">
+            <div>
+              <div class="promo__title">СНЕКИ И НАПИТКИ</div>
+              <div class="promo__cta">Подробнее <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--cs" style="--bg: url('img/cs_back.png')">
+            <div>
+              <div class="promo__title">КИБЕРФИКАЦИЯ CS</div>
+              <div class="promo__cta">Хочу участвовать <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--dota" style="--bg: url('img/dota_back.jpg')">
+            <div>
+              <div class="promo__title">КИБЕРФИКАЦИЯ DOTA</div>
+              <div class="promo__cta">Хочу участвовать <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--vk" style="--bg: url('img/vk_back.jpg')">
+            <div>
+              <div class="promo__title">ГРУППА VK</div>
+              <div class="promo__cta">Перейти в группу <span>→</span></div>
+            </div>
+          </article>
+
+          <article class="promo promo--bday" style="--bg: url('img/birthday_back.png')">
+            <div>
+              <div class="promo__title">ДР</div>
+              <div class="promo__cta">Забронировать <span>→</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container">
+        <h2 class="section__title">КАК НАС НАЙТИ?</h2>
+
+        <div class="contacts__grid">
+          <div class="contact-card">
+            <h3>Кибертека на Профсоюзной</h3>
+            <p>
+              Метро Профсоюзная — 4 минуты пешком<br />
+              Метро Академическая — 5 минут пешком
+            </p>
+            <ul class="contact-list">
+              <li><strong>Адрес:</strong> Профсоюзная улица 22/10к1</li>
+              <li><strong>Телефон:</strong> +7 977 320 88 88</li>
+            </ul>
+
+            <div class="socials" aria-label="Соцсети">
+              <img src="img/Telegram.svg" alt="Telegram" />
+              <img src="img/Vk.png" alt="VK" />
+              <img src="img/Whatsapp.svg" alt="WhatsApp" />
+            </div>
+          </div>
+
+          <div class="map-card" aria-label="Карта">
+            <iframe
+              title="Карта — Профсоюзная"
+              loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=37.5677%2C55.6808%2C37.5837%2C55.6888&layer=mapnik&marker=55.6848%2C37.5757">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

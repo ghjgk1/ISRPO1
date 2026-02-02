@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кибертека — Забронировать</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page">
+  <a class="close-to-index" href="index.html" aria-label="На главную">
+    <span>×</span>
+  </a>
+
+  <main class="booking-page" aria-label="Форма бронирования">
+    <section class="booking-card">
+      <h1 class="booking-card__title">Забронируй место</h1>
+
+      <div class="booking-layout">
+        <form class="booking-form" action="#" method="get">
+          <div class="booking-form__row">
+            <div class="field">
+              <label for="b-name">Имя</label>
+              <input class="input" id="b-name" type="text" placeholder="" />
+            </div>
+
+            <div class="field">
+              <label for="b-date">дд.мм.гггг</label>
+              <input class="input" id="b-date" type="text" placeholder="" />
+            </div>
+
+            <div class="field">
+              <label for="b-time">время</label>
+              <input class="input" id="b-time" type="text" placeholder="" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="b-guests">Количество гостей</label>
+            <input class="input" id="b-guests" type="text" placeholder="0" />
+          </div>
+
+          <div class="field">
+            <label for="b-phone">Номер телефона</label>
+            <input class="input" id="b-phone" type="tel" placeholder="" />
+          </div>
+
+          <div class="field">
+            <label for="b-note">Ваши пожелания</label>
+            <textarea class="textarea" id="b-note" rows="4" placeholder=""></textarea>
+          </div>
+
+          <div class="booking-form__actions">
+            <button class="btn btn--primary" type="button">Забронировать</button>
+          </div>
+        </form>
+
+        <div class="booking-art" aria-hidden="true">
+          <img class="vest" src="img/bulletproof.png" alt="" />
+          <img class="helmet" src="img/helmet.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

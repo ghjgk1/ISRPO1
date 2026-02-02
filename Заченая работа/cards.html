@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car&Drive - Карты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/svg/logo.svg" alt="Car&Drive Logo">
+            <span>Car&Drive</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Личный кабинет</a>
+        </nav>
+    </header>
+
+    <main class="main cards-page">
+        <h1>Банковские карты</h1>
+        
+        <div class="cards-list">
+            <div class="card-item">
+                <p>Номер: **** 1234</p>
+                <p>Тип: Visa</p>
+                <p>Статус: Активна</p>
+                <button class="remove-card-btn">Удалить</button>
+            </div>
+        </div>
+        
+        <button class="add-card-btn">Добавить карту</button>
+        
+        <div class="modal hidden">
+            <div class="modal-content">
+                <h3>Добавление карты</h3>
+                <input type="text" placeholder="Номер карты (XXXX XXXX XXXX XXXX)">
+                <input type="text" placeholder="Имя и фамилия">
+                <input type="text" placeholder="ММ/ГГ">
+                <input type="text" placeholder="CVV">
+                <button>Добавить</button>
+                <button class="close-modal">Отмена</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
